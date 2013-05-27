@@ -88,18 +88,17 @@ BEGIN
     DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
 END
 
-IDD_AVI2MP4_DIALOG DIALOGEX 0, 0, 427, 238
+IDD_AVI2MP4_DIALOG DIALOGEX 0, 0, 255, 101
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
 CAPTION "视频格式转换"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "确定",IDOK,312,217,50,14
-    PUSHBUTTON      "取消",ID_LIST,370,217,50,14
-    LISTBOX         IDC_LIST1,7,7,140,224,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
-    EDITTEXT        IDC_EDIT1,167,26,171,14,ES_AUTOHSCROLL
-    PUSHBUTTON      "...",IDC_BUTTON1,339,26,21,14
-    LISTBOX         IDC_LIST2,160,53,135,178,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,55,54,50,14
+    PUSHBUTTON      "退出",ID_LIST,146,54,50,14
+    EDITTEXT        IDC_EDIT1,30,22,171,14,ES_AUTOHSCROLL,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "...",IDC_BUTTON1,202,22,21,14
+    CONTROL         "<a>打开输出目录</a>",IDC_SYSLINK1,"SysLink",WS_TABSTOP,205,83,43,11
 END
 
 
@@ -125,11 +124,11 @@ BEGIN
     BEGIN
         BLOCK "080403a8"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
-            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "CompanyName", "Tongfang Cloud"
+            VALUE "FileDescription", "mp4"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "avi2mp4.exe"
-            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "LegalCopyright", "版权所有，盗版必究"
             VALUE "OriginalFilename", "avi2mp4.exe"
             VALUE "ProductName", "TODO: <产品名>"
             VALUE "ProductVersion", "1.0.0.1"
@@ -161,9 +160,9 @@ BEGIN
     IDD_AVI2MP4_DIALOG, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 420
+        RIGHTMARGIN, 248
         TOPMARGIN, 7
-        BOTTOMMARGIN, 231
+        BOTTOMMARGIN, 94
     END
 END
 #endif    // APSTUDIO_INVOKED

@@ -5,6 +5,9 @@
 
 #pragma once
 
+#include <stdio.h>
+#include <afxdlgs.h>
+
 #ifndef _SECURE_ATL
 #define _SECURE_ATL 1
 #endif

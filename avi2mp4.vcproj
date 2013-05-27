@@ -23,7 +23,7 @@
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="2"
-			CharacterSet="2"
+			CharacterSet="1"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -47,11 +47,11 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\mp4"
-				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;UNICODE;_UNICODE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="1"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -70,6 +70,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="libmp4D.lib Vfw32.lib"
+				OutputFile="$(OutDir)\$(ProjectName)D.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\bin"
 				GenerateDebugInformation="true"
@@ -100,11 +101,11 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="..\bin"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfMFC="2"
-			CharacterSet="2"
+			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
 			<Tool
